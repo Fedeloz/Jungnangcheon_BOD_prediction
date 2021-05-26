@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Precipitation (mm) <= 2.4\nsamples = 53\nvalue = 4.083", fillcolor="#fae6d8"] ;
+1 [label="Air Pressure (hPa) <= 1003.95\nsamples = 46\nvalue = 3.439", fillcolor="#fcf1e9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Air Pressure (hPa) <= 1003.35\nsamples = 20\nvalue = 4.37", fillcolor="#f9e1d0"] ;
+1 -> 2 ;
+3 [label="samples = 18\nvalue = 3.978", fillcolor="#fae8da"] ;
+2 -> 3 ;
+4 [label="samples = 2\nvalue = 7.9", fillcolor="#eda572"] ;
+2 -> 4 ;
+5 [label="Solar Radiation (MJ/m2) <= 3.74\nsamples = 26\nvalue = 2.723", fillcolor="#fffdfc"] ;
+1 -> 5 ;
+6 [label="samples = 1\nvalue = 5.7", fillcolor="#f4cbad"] ;
+5 -> 6 ;
+7 [label="samples = 25\nvalue = 2.604", fillcolor="#ffffff"] ;
+5 -> 7 ;
+8 [label="Air Pressure (hPa) <= 991.55\nsamples = 7\nvalue = 8.314", fillcolor="#eb9e67"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Solar Radiation (MJ/m2) <= 9.505\nsamples = 2\nvalue = 5.75", fillcolor="#f4caab"] ;
+8 -> 9 ;
+10 [label="samples = 1\nvalue = 5.9", fillcolor="#f3c7a7"] ;
+9 -> 10 ;
+11 [label="samples = 1\nvalue = 5.6", fillcolor="#f5ccaf"] ;
+9 -> 11 ;
+12 [label="Solar Radiation (MJ/m2) <= 13.955\nsamples = 5\nvalue = 9.34", fillcolor="#e78d4c"] ;
+8 -> 12 ;
+13 [label="samples = 4\nvalue = 10.05", fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label="samples = 1\nvalue = 6.5", fillcolor="#f1bd97"] ;
+12 -> 14 ;
+}
