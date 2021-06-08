@@ -1,4 +1,0 @@
-Start with naive bayes as base model¿?
-Support vector machine, as we don´t have much data (SVM)
-RandomForestRegressor
-Gradient boosted decision trees
